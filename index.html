@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Shubh Tripathi | Portfolio</title>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo"><i class="fa-solid fa-code"></i></div>
+        <div>
+          <div class="name">Shubh Tripathi</div>
+          <div class="title">Web Developer</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-left">
+          <h1>Hi, I'm <span class="accent">Shubh Tripathi</span></h1>
+          <p class="tagline">I build modern, responsive websites and web apps.</p>
+          <div class="cta">
+            <a class="btn" href="#projects"><i class="fa-solid fa-eye"></i> View Projects</a>
+            <a class="btn secondary" href="Shubh_Resume.pdf" download><i class="fa-solid fa-download"></i> Resume</a>
+          </div>
+        </div>
+        <div class="hero-right">
+          <img src="Portfolio_img.jpeg" alt="Profile" class="profile-img">
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="card">
+        <h2><i class="fa-solid fa-user"></i> About Me</h2>
+        <p>I’m a passionate web developer skilled in front-end and back-end development, creating visually appealing and user-friendly digital experiences.</p>
+        <div class="skills">
+          <div class="skill">HTML</div>
+          <div class="skill">CSS</div>
+          <div class="skill">JavaScript</div>
+          
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="card">
+        <h2><i class="fa-solid fa-laptop-code"></i> Projects</h2>
+        <div class="projects-grid">
+          <div class="project">
+            <h3>Tic Tac Toe Game</h3>
+            <p>A fun 2-player Tic Tac Toe game built with HTML, CSS, and JavaScript.</p>
+            <a class="btn" href="https://it-shubh.github.io/tic-tac-toe/" target="_blank"><i class="fa-solid fa-link"></i> Live</a>
+          </div>
+          <div class="project">
+            <h3>Simple Calculator</h3>
+            <p>A responsive calculator that performs basic arithmetic operations using JavaScript.</p>
+            <a class="btn" href="https://it-shubh.github.io/calculatoor/" target="_blank"><i class="fa-solid fa-link"></i> Live</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="card">
+        <h2><i class="fa-solid fa-envelope"></i> Contact</h2>
+        <p>Want to collaborate? Send me a message or connect on Instagram.</p>
+
+        <!-- Replace YOUR_FORM_ID with your Formspree form endpoint -->
+        <form id="contactForm" action="https://formspree.io/f/mpqjbrrz" method="POST">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required>
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit" class="btn secondary"><i class="fa-solid fa-paper-plane"></i> Send</button>
+          <div id="formStatus"></div>
+        </form>
+
+        <div class="socials">
+          <a href="mailto:sstripathi500@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/shubhsandeeptripathi " target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/shubhstripathi?igsh=MWFzNDJ3dHdocm83cQ==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://github.com/It-Shubh/My_C_Project" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      © <span id="year"></span> Shubh Tripathi | Built with <i class="fa-solid fa-heart accent"></i> using HTML, CSS & JS
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
